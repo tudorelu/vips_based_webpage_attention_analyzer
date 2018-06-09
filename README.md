@@ -8,12 +8,11 @@ Usage
 
 **Windows**
 
+Open cmd from vips_java folder, then:
 `
 javac -cp ".:src/:lib/\*" src/org/fit/vips/\*.java"
 `
-
-then
-
+  followed by
 `
 java -cp ".:src/:lib/\*" org/fit/vips/VipsTester \[webpage\]
 `
