@@ -2,14 +2,17 @@
 Usage
 -----
 
-'''
+`
 javac -cp ".:src/:lib/\*" src/org/fit/vips/\*.java"
+`
+then
+`
 java -cp ".:src/:lib/\*" org/fit/vips/VipsTester \[webpage\]
-'''
-*webpage* can be a **local .html file** (but it will take a while - around 20 minutes to run) or an **URL** (unless you have very fast internet, the page will not load completely & the analysis will occur on the partially loaded page).
+`
+Here, webpage* can be a **local .html file** (but it will take a while - around 20 minutes to run) or an **URL** (unless you have very fast internet, the page will not load completely & the analysis will occur on the partially loaded page).
 
 Credits
--------
+------
 
 Implementation of Vision Based Page Segmentation algorithm in Java taken from
 here:
