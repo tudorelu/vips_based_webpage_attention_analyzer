@@ -19,11 +19,14 @@ followed by
 `
 java -cp ".:src/:lib/\*" org/fit/vips/VipsTester \[webpage\]
 `
-Here, webpage* can be a **local .html file** (but it will take a while - around 20 minutes to run) or an **URL** (not recommended, might not work properly).
 
-If everything goes well (after some time - it can take up to 20 minutesn maybe more) the program will produce a folder with some images - **blocks1.png, blocks3.png, page.png,** etc. Each 'blocksN.png' is a segmentation of the webpage - the bigger the N, the more advanced the segmentation stage. 
+Here, webpage* can be a **local .html file** or an **URL** (tis way might not work properly).
 
-So, you copy your desired block image (for example **blocks8.png**) and the **page.png** one and you put them into a folder together with the **create_heatmap.py** script. Open the script and change the *Block_Image* variable to be the name of the that you copied. 
+If everything goes well (after some time - it can take up to 20 minutes, & maybe more) the program will produce a folder with some images - **blocks1.png, blocks3.png, page.png** etc. Each 'blocksN.png' is a different segmentation of the webpage - the bigger the N, the smaller the segments. 
+
+*Next*, you copy from there **page.png** + your desired segmentation image (for example **blocks8.png**) into a folder, together with the **create_heatmap.py** script. Open the script and change the *Block_Image* variable to be the name of the segmentation image (for example **blocks8.png**) that you copied. 
+
+And finally...
 
 Make sure you have PIL installed (the Python Image Library). You can install it via pip.
 Then, open a terminal and CD in that directory, then run 
