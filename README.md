@@ -5,7 +5,9 @@ Usage
 `
 javac -cp ".:src/:lib/\*" src/org/fit/vips/\*.java"
 `
+
 then
+
 `
 java -cp ".:src/:lib/\*" org/fit/vips/VipsTester \[webpage\]
 `
