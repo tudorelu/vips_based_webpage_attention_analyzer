@@ -1,23 +1,37 @@
 About
 -----
-This is the first part of the Webpage Analyzer program. This part will segment a webpage and extract the main areas from it.
+This is the first version of the Webpage Analyzer program. It will take a webpage (for now a locally saved .html file works better than a URL), It will segment it's content and it will determine which parts are more visible & attractive based on color & size.
 
 
 Usage
 -----
 
-**Windows**
+**Ubuntu (Maybe Windows too)**
 
 Open cmd from vips_java folder, then:
+
 `
 javac -cp ".:src/:lib/\*" src/org/fit/vips/\*.java"
 `
-  followed by
+
+followed by
+
 `
 java -cp ".:src/:lib/\*" org/fit/vips/VipsTester \[webpage\]
 `
+Here, webpage* can be a **local .html file** (but it will take a while - around 20 minutes to run) or an **URL** (not recommended, might not work properly).
 
-Here, webpage* can be a **local .html file** (but it will take a while - around 20 minutes to run) or an **URL** (unless you have very fast internet, the page will not load completely & the analysis will occur on the partially loaded page).
+If everything goes well (after some time - it can take up to 20 minutesn maybe more) the program will produce a folder with some images - **blocks1.png, blocks3.png, page.png,** etc. Each 'blocksN.png' is a segmentation of the webpage - the bigger the N, the more advanced the segmentation stage. 
+
+So, you copy your desired block image (for example **blocks8.png**) and the **page.png** one and you put them into a folder together with the **create_heatmap.py** script. Open the script and change the *Block_Image* variable to be the name of the that you copied. 
+
+Make sure you have PIL installed (the Python Image Library). You can install it via pip.
+Then, open a terminal and CD in that directory, then run 
+
+`python create_heatmap.py`
+
+After a few seconds, the result should appear as a png image (named **results_blocks8.png** in this example)
+
 
 Credits
 ------
