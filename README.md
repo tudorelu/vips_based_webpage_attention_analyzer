@@ -6,6 +6,8 @@ This is the first part of the Webpage Analyzer program. This part will segment a
 Usage
 -----
 
+**Windows**
+
 `
 javac -cp ".:src/:lib/\*" src/org/fit/vips/\*.java"
 `
