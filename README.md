@@ -39,22 +39,8 @@ After a few seconds, the result should appear as a png image (named **results_bl
 Credits
 ------
 
-Implementation of Vision Based Page Segmentation algorithm in Java taken from
+Implementation of Vision Based Page Segmentation (VIPS) algorithm in Java taken from
 here:
 [https://github.com/tpopela/vips_java](https://github.com/tpopela/vips_java "") 
 
-The implementation utilizes CSSBox (X)HTML/CSS rendering engine written
-by Radek Burget.
-
-*Description of VIPS and **tpopela's** implementation in his master's thesis (in Czech)*
-
-[http://www.fit.vutbr.cz/study/DP/DP.php?id=14163&file=t](http://www.fit.vutbr.cz/study/DP/DP.php?id=14163&file=t "")
-
-*Original work by Microsoft*
-
-[http://www.cad.zju.edu.cn/home/dengcai/VIPS/VIPS_July-2004.pdf](http://www.cad.zju.edu.cn/home/dengcai/VIPS/VIPS_July-2004.pdf "")
-
-*CSSBox*
-
-[http://cssbox.sourceforge.net](http://cssbox.sourceforge.net "")
 
