@@ -12,9 +12,8 @@ import sys
 # To run, simply call ` python create_heatmap.py ` to run. 
 
 
-# CHANGE THIS LINE TO DETERMINE WHICH SEGMENTATION TO CHOOSE
-Block_Image = './blocks8.png'
-Original_Image = './page.png'
+Block_Image = 'blocks8.png'
+Original_Image = 'page.png'
 
 sys.setrecursionlimit(10000)
 
@@ -75,7 +74,7 @@ def find_block_of_pixel(pixels, i, j):
 SCALE_FACTOR = 0.2
 
 # preprocess initial image of web page
-original_img = Image.open(Original_Image)
+original_img = Image.open("./"+Original_Image)
 original_img = scaleImage(original_img, SCALE_FACTOR)
 
 if original_img.mode != 'RGB':
@@ -89,7 +88,7 @@ o_pixels = original_img.load()
 #	~	#	~	$	~	$	~	%	~	%
 
 #preprocess image outlining the blocks
-blocks_img = Image.open(Block_Image)
+blocks_img = Image.open("./"+Block_Image)
 
 #scale it down so we don't run in stack overflow & it runs faster
 blocks_img = scaleImage(blocks_img,  SCALE_FACTOR)
@@ -179,7 +178,7 @@ for k in range(0,maxk):
 	draw.line((minx[k],maxy[k], maxx[k], maxy[k]), fill=0, width=2)
 '''
 
-all_blocks_image.save("./block_results/all_blocks.jpg")
+all_blocks_image.save("./results"+Block_Image)
 
 
 print ("maxdiff is "+str(maxdiff))
