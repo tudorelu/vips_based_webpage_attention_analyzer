@@ -1,3 +1,7 @@
+About
+-----
+This is the first part of the Webpage Analyzer program. This part will segment a webpage and extract the main areas from it.
+
 
 Usage
 -----
@@ -11,6 +15,7 @@ then
 `
 java -cp ".:src/:lib/\*" org/fit/vips/VipsTester \[webpage\]
 `
+
 Here, webpage* can be a **local .html file** (but it will take a while - around 20 minutes to run) or an **URL** (unless you have very fast internet, the page will not load completely & the analysis will occur on the partially loaded page).
 
 Credits
